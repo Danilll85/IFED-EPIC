@@ -4,87 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Witcher Blog</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icon.webp">
   </head>
   <body>
     <header style="display: flex; flex-direction: row; align-items: center; gap: 25px">
-      <img src="./assets/The_Witcher_IV_Logo.webp" width="280px" height="110px" alt="logo" tabindex="0" />
+      <a href="/" class="logo-link">
+        <img
+          src="./assets/The_Witcher_IV_Logo.webp"
+          width="280"
+          height="110"
+          alt="The Witcher 4 - Return to Homepage"
+        />
+      </a>
       <nav>
-        <a href="/">Home</a>  
+        <a href="/">Home</a>
         <a href="/about-us.html">About us</a>
       </nav>
     </header>
     <main>
-      <section>
-        <h1>The Latest News about development of the WITCHER IV</h1>
-        <p>
-          The Witcher 4 is a single-player, open-world RPG from <i>CD PROJEKT RED</i>. At the start of a new saga, players take
-          on the role of Ciri, a professional monster slayer, and embark on a journey through a brutal dark-fantasy
-          world. Powered by Unreal Engine 5, it aims to be the most immersive and ambitious open-world Witcher game to
-          date.
-        </p>
-      </section>
-      <section>
-        <h2>Articles</h2>
-        <ul type="none">
+      <section aria-label="main-articles">
+        <h1>The Latest News about development of the WITCHER IV</h1><h2></h2>
+        <ul aria-label="list of articles" type="none">
+          <!-- i know that type="none" it's more to css, but via hw requirements we don't use css-->
           <li>
             <article>
-              <img src="./assets/article1.png" width="500px" alt="article img" />
+              <img src="./assets/article1.png" width="500" alt="article1 img" />
               <h3><a href="./article1.html">The Witcher in Concert - anniversary concerts</a></h3>
               <time datetime="2025-03-04">4 / 03 / 2025</time>
-              <p></p>
             </article>
           </li>
           <li>
             <article>
-              <img src="./assets/article2.png" width="500px" alt="article img" />
+              <img src="./assets/article2.png" width="500" alt="article2 img" />
               <h3><a href="./article2.html">It’s All About You! — Of Witchers and Monsters</a></h3>
-              <p>19 / 12 /2024</p>
+              <time datetime="2024-12-19">19 / 12 / 2024</time>
             </article>
           </li>
           <li>
             <article>
-              <img src="./assets/article3.png" width="500px" alt="article img" />
+              <img src="./assets/article3.png" width="500" alt="article3 img" />
               <h3><a href="./article3.html">Meet the winners of The Witcher 3 REDkit Modding Contest!</a></h3>
-              <p>14 / 11 /2024</p>
+              <time datetime="2024-11-14">14 / 11 / 2024</time>
             </article>
           </li>
           <li>
             <article>
-              <img src="./assets/article4.png" width="500px" alt="article img" />
+              <img src="./assets/article4.png" width="500" alt="article4 img" />
               <h3><a href="./article4.html">New board game is coming — The Witcher: Path of Destiny!</a></h3>
-              <p>12 /09 /2023</p>
+              <time datetime="2023-09-12">12 /09 /2023</time>
             </article>
           </li>
         </ul>
       </section>
     </main>
-
     <hr />
-
     <footer>
-      <div>
+      <div aria-label="contact-info">
         <h3>Contact Us</h3>
         <address>
-          Email: <a href="email@gmail.com">info@example.com</a><br />
+          Email: <a href="mailto:email@gmail.com">info@example.com</a><br />
           Phone Number: <a href="tel:+375448764093">+375 (44) 876-40-93</a><br />
           Adress: Minsk
         </address>
       </div>
-      <div>
+      <div aria-label="social-info">
         <h3>Our social networks</h3>
-        <ul>
-          <li><a href="#">Discord</a></li>
-          <li><a href="#">Telegram</a></li>
-          <li><a href="#">YouTube</a></li>
+        <ul aria-label="our social labels">
+          <li><a href="#" aria-label="Our discord server">Discord</a></li>
+          <li><a href="#" aria-label="Our telegram channel">Telegram</a></li>
+          <li><a href="#" aria-label="Our youtube channel">YouTube</a></li>
         </ul>
       </div>
-      <div>
-        <p>
-          &copy; 2025 CD PROJEKT S.A. All rights reserved. CD PROJEKT, the CD PROJEKT logo, The Witcher and The Witcher
-          Logo are trademarks and/or registered trademarks of CD PROJEKT S.A. in the US and/or other countries. The
-          Witcher game is set in the universe created by Andrzej Sapkowski in his series of books.
-        </p>
-      </div>
+      <p aria-label="legal information">
+        &copy; 2025 CD PROJEKT S.A. All rights reserved. CD PROJEKT, the CD PROJEKT logo, The Witcher and The Witcher
+        Logo are trademarks and/or registered trademarks of CD PROJEKT S.A. in the US and/or other countries. The
+        Witcher game is set in the universe created by Andrzej Sapkowski in his series of books.
+      </p>
     </footer>
   </body>
 </html>

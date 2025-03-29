@@ -3,43 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <title>Article 1</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icon.webp">
   </head>
   <body>
     <header style="display: flex; flex-direction: row; align-items: center; gap: 25px">
-      <img src="./assets/The_Witcher_IV_Logo.webp" width="280px" height="110px" alt="logo" tabindex="0" />
+      <a href="/"><img src="./assets/The_Witcher_IV_Logo.webp" width="280" height="110" alt="logo" /></a>
       <nav>
         <a href="/">Home</a>
         <a href="/about-us.html">About us</a>
       </nav>
     </header>
-
     <main>
-      <p></p>
+      <article>
+        <header>
+          <h1>The Witcher in Concert - Anniversary Concerts</h1>
+          <img src="./assets/article1.png" width="500" alt="The Witcher 3: Wild Hunt concert promotional image" />
+        </header>
+        <section>
+          <p>
+            This May marks the 10th anniversary of <strong>The Witcher 3: Wild Hunt</strong>, and we're thrilled to
+            announce special concerts celebrating it in Poland and the United States!
+          </p>
+        </section>
+        <section>
+          <h2>Concert Details</h2>
+          <p>
+            In just a couple of days, on <time datetime="2024-03-07T10:00-05:00">March 7th at 10 AM EST</time> /
+            <time datetime="2024-03-07T16:00+01:00">4 PM CET</time>, you will be able to purchase tickets for two new
+            anniversary concerts:
+          </p>
+          <ul>
+            <li>
+              <address>Boston, Massachusetts</address>
+              on <time datetime="2024-05-31">May 31st</time> at <em>Emerson Colonial Theatre</em>
+            </li>
+            <li>
+              <address>Poznań, Poland</address>
+              on <time datetime="2024-06-15">June 15th</time> during <em>Pyrkon</em>, a Polish Fan Convention who teamed
+              up with us for this celebration
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Exclusive Pre-sale</h2>
+          <p>
+            For those of you who signed up for our newsletter at
+            <a href="https://thewitcher.com/concert" target="_blank" rel="noopener noreferrer"
+              >https://thewitcher.com/concert </a
+            >, we've also prepared an exclusive pre-sale, just like last time!
+          </p>
+          <p>
+            It will start on <time datetime="2024-03-05T10:00-05:00">March 5th at 10 AM EST</time> /
+            <time datetime="2024-03-05T16:00+01:00">4 PM CET</time>. Make sure to check your inbox—you'll find the
+            pre-sale code there!
+          </p>
+        </section>
+      </article>
     </main>
-
     <hr />
-
     <footer>
-      <div>
+      <div aria-label="contact-info">
         <h3>Contact Us</h3>
         <address>
-          Email: <a href="email@gmail.com">info@example.com</a><br />
+          Email: <a href="mailto:email@gmail.com">info@example.com</a><br />
           Phone Number: <a href="tel:+375448764093">+375 (44) 876-40-93</a><br />
           Adress: Minsk
         </address>
       </div>
-      <div>
+      <div aria-label="social-info">
         <h3>Our social networks</h3>
-        <ul>
-          <li><a href="#">VK</a></li>
-          <li><a href="#">Telegram</a></li>
-          <li><a href="#">YouTube</a></li>
+        <ul aria-label="our social labels">
+          <li><a href="#" aria-label="Our discord server">Discord</a></li>
+          <li><a href="#" aria-label="Our telegram channel">Telegram</a></li>
+          <li><a href="#" aria-label="Our youtube channel">YouTube</a></li>
         </ul>
       </div>
-
-      <div>
-        <p>&copy; 2025 Company name. All rights reserved.</p>
-      </div>
+      <p aria-label="legal information">
+        &copy; 2025 CD PROJEKT S.A. All rights reserved. CD PROJEKT, the CD PROJEKT logo, The Witcher and The Witcher
+        Logo are trademarks and/or registered trademarks of CD PROJEKT S.A. in the US and/or other countries. The
+        Witcher game is set in the universe created by Andrzej Sapkowski in his series of books.
+      </p>
     </footer>
   </body>
 </html>

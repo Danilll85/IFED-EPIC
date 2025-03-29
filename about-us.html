@@ -7,47 +7,65 @@
   </head>
   <body>
     <header style="display: flex; flex-direction: row; align-items: center; gap: 25px">
-      <img src="./assets/The_Witcher_IV_Logo.webp" width="280px" height="110px" alt="logo" />
+      <a href="/" class="logo-link">
+        <img
+          src="./assets/The_Witcher_IV_Logo.webp"
+          width="280"
+          height="110"
+          alt="The Witcher 4 - Return to Homepage"
+        />
+      </a>
       <nav>
         <a href="/">Home</a>
         <a href="/about-us.html">About us</a>
       </nav>
     </header>
-
-    <img src="./assets/about-us-bcg.png" alt="" />
-
-    <p>
-      The Witcher 4 is a single-player, open-world RPG from CD PROJEKT RED. At the start of a new saga, players take on
-      the role of Ciri, a professional monster slayer, and embark on a journey through a brutal dark-fantasy world.
-      Powered by Unreal Engine 5, it aims to be the most immersive and ambitious open-world Witcher game to date.
-    </p>
-
+    <main>
+      <article>
+        <figure>
+          <img src="./assets/about-us-bcg.png" alt="Ciri from The Witcher 4 standing in a dark fantasy landscape" />
+          <figcaption>Ciri explores the dark fantasy world of the new Witcher saga</figcaption>
+        </figure>
+        <section>
+          <h1>About The Witcher 4</h1>
+          <h2></h2>
+          <p>
+            <cite>The Witcher 4</cite> is a single-player, open-world <abbr title="Role-Playing Game">RPG</abbr> from
+            <strong>CD PROJEKT RED</strong>. At the start of a new saga, players take on the role of
+            <strong>Ciri</strong>, a professional monster slayer, and embark on a journey through a brutal dark-fantasy
+            world.
+          </p>
+          <p>
+            Powered by
+            <a href="https://www.unrealengine.com" target="_blank" rel="noopener noreferrer">Unreal Engine 5</a>, it
+            aims to be <em>the most immersive and ambitious open-world Witcher game to date</em>.
+          </p>
+        </section>
+      </article>
+    </main>
     <hr />
-
     <footer>
-      <div>
+      <div aria-label="contact-info">
         <h3>Contact Us</h3>
         <address>
-          Email: <a href="email@gmail.com">info@example.com</a><br />
+          Email: <a href="mailto:email@gmail.com">info@example.com</a><br />
           Phone Number: <a href="tel:+375448764093">+375 (44) 876-40-93</a><br />
           Adress: Minsk
         </address>
       </div>
-      <div>
+      <div aria-label="social-info">
         <h3>Our social networks</h3>
-        <ul>
-          <li><a href="#">Discord</a></li>
-          <li><a href="#">Telegram</a></li>
-          <li><a href="#">YouTube</a></li>
+        <ul aria-label="our social labels">
+          <li><a href="#" aria-label="Our discord server">Discord</a></li>
+          <li><a href="#" aria-label="Our telegram channel">Telegram</a></li>
+          <li><a href="#" aria-label="Our youtube channel">YouTube</a></li>
         </ul>
       </div>
-      <div>
-        <p>
-          &copy; 2025 CD PROJEKT S.A. All rights reserved. CD PROJEKT, the CD PROJEKT logo, The Witcher and The Witcher
-          Logo are trademarks and/or registered trademarks of CD PROJEKT S.A. in the US and/or other countries. The
-          Witcher game is set in the universe created by Andrzej Sapkowski in his series of books.
-        </p>
-      </div>
+      <p aria-label="legal information">
+        &copy; 2025 CD PROJEKT S.A. All rights reserved. CD PROJEKT, the CD PROJEKT logo, The Witcher and The Witcher
+        Logo are trademarks and/or registered trademarks of CD PROJEKT S.A. in the US and/or other countries. The
+        Witcher game is set in the universe created by Andrzej Sapkowski in his series of books.
+      </p>
     </footer>
   </body>
 </html>
