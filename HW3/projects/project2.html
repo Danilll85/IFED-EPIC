@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App | Danila Kuroedov</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        .project-page {
+            padding-top: calc(var(--nav-height) + 50px);
+        }
+        
+        .project-header {
+            margin-bottom: 50px;
+        }
+        
+        .project-title {
+            font-size: clamp(30px, 5vw, 50px);
+            color: var(--light);
+            margin-bottom: 20px;
+        }
+        
+        .project-subtitle {
+            color: var(--primary);
+            font-family: var(--font-mono);
+            margin-bottom: 30px;
+        }
+        
+        .project-content {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 50px;
+        }
+        
+        .project-images {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .project-image {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+            transition: var(--transition);
+        }
+        
+        .project-image:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-details {
+            position: sticky;
+            top: 100px;
+            align-self: start;
+        }
+        
+        .project-tech {
+            margin: 30px 0;
+        }
+        
+        .back-button {
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <div class="logo">AD</div>
+            <div class="nav-links">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container project-page">
+        <div class="project-header">
+            <h1 class="project-title">Task Management App</h1>
+            <p class="project-subtitle">Real-Time Productivity Platform</p>
+        </div>
+
+        <div class="project-content">
+            <div class="project-images">
+                <img src="https://res.cloudinary.com/ventureharbour-com/images/w_1034,h_605,c_scale/dpr_auto/f_auto,q_auto/v1596797373/VentureHarbour/5aef48d06154a896a2b2db34_Big_Screen2-min-1034x605-1/5aef48d06154a896a2b2db34_Big_Screen2-min-1034x605-1.png?_i=AA" alt="Task Management App UI" class="project-image">
+            </div>
+
+            <div class="project-details">
+                <h2>Project Overview</h2>
+                <p>A productivity application built with Vue.js and Firebase. It features drag-and-drop task management, team collaboration, and real-time syncing across users for efficient workflow handling.</p>
+                
+                <div class="project-tech">
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>Vue.js (Composition API)</li>
+                        <li>Firebase Authentication + Firestore</li>
+                        <li>Tailwind CSS</li>
+                        <li>VueDraggable for drag-and-drop</li>
+                        <li>Real-time updates via Firestore listeners</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/username/task-app" class="btn" target="_blank">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                    <a href="https://task-app-demo.com" class="btn btn-outline" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-button">
+            <a href="../index.html#projects" class="btn">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+        </div>
+    </main>
+
+    <footer class="container">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="credits">
+            <p>Designed & Built by Danila Kuroedov</p>
+        </div>
+    </footer>
+</body>
+</html>

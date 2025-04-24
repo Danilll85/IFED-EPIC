@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard | Danila Kuroedov</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        .project-page {
+            padding-top: calc(var(--nav-height) + 50px);
+        }
+        
+        .project-header {
+            margin-bottom: 50px;
+        }
+        
+        .project-title {
+            font-size: clamp(30px, 5vw, 50px);
+            color: var(--light);
+            margin-bottom: 20px;
+        }
+        
+        .project-subtitle {
+            color: var(--primary);
+            font-family: var(--font-mono);
+            margin-bottom: 30px;
+        }
+        
+        .project-content {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 50px;
+        }
+        
+        .project-images {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .project-image {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+            transition: var(--transition);
+        }
+        
+        .project-image:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-details {
+            position: sticky;
+            top: 100px;
+            align-self: start;
+        }
+        
+        .project-tech {
+            margin: 30px 0;
+        }
+        
+        .back-button {
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <div class="logo">AD</div>
+            <div class="nav-links">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container project-page">
+        <div class="project-header">
+            <h1 class="project-title">Weather Dashboard</h1>
+            <p class="project-subtitle">Real-Time Weather Forecasting Tool</p>
+        </div>
+
+        <div class="project-content">
+            <div class="project-images">
+                <img src="https://uizard.io/static/89cb1d30cdee9c19b0ce72efe004ff49/a8e47/f5e31989f816c5b15c47cd54b0eb0b30b210b6f0-1440x835.png" alt="Weather Dashboard UI" class="project-image">
+            </div>
+
+            <div class="project-details">
+                <h2>Project Overview</h2>
+                <p>An interactive weather application using the OpenWeather API. Displays current weather, 5-day forecast, and historical trends with visually appealing charts and clean design.</p>
+                
+                <div class="project-tech">
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>JavaScript (ES6)</li>
+                        <li>OpenWeather API</li>
+                        <li>Chart.js for data visualization</li>
+                        <li>Async/Await for API calls</li>
+                        <li>Responsive layout with CSS Flex/Grid</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/username/weather-dashboard" class="btn" target="_blank">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                    <a href="https://weather-dashboard-demo.com" class="btn btn-outline" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-button">
+            <a href="../index.html#projects" class="btn">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+        </div>
+    </main>
+
+    <footer class="container">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="credits">
+            <p>Designed & Built by Danila Kuroedov</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 50px;
+}
+
+.hero-content h1 {
+    font-size: clamp(40px, 5vw, 80px);
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--light);
+}
+
+.hero-content h2 {
+    font-size: clamp(20px, 3vw, 40px);
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    max-width: 600px;
+    margin-bottom: 40px;
+    color: var(--gray-light);
+}
+
+.hero-cta {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-social {
+    position: fixed;
+    left: 40px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.hero-social::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100px;
+    background: var(--gray);
+    margin-top: 20px;
+}
+
+.hero-social a {
+    color: var(--gray);
+    font-size: 20px;
+}
+
+.hero-social a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.hero-email {
+    position: fixed;
+    right: 40px;
+    bottom: 0;
+    writing-mode: vertical-rl;
+    color: var(--gray);
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.hero-email:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
