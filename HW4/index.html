@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,17 +10,102 @@
     <form id="form-element" action="#">
       <h1>Login</h1>
       <div class="inputs-wrapper">
-      <label for="email-input">
-        Email
-        <input type="email" id="email-input" name="email" placeholder="Enter email" />
-      </label>
-      <label for="password-input">
-        Password
-        <input type="password" id="password-input" name="password" placeholder="Enter password" />
-      </label>
+      <label for="email-input">Email</label>
+      <input type="email" id="email-input" class="input input-primary input-small" name="email" placeholder="Enter email" required/>
+
+
+      <label for="password-input">Password </label>
+      <input type="password" id="password-input" class="input input-secondary input-small" name="password" placeholder="Enter password" required/>     
+
     </div>
     <div class="submit-wrapper">
       <button type="submit" id="login-btn">login</button>
     </div>
     </form>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>HW 4 - All Input Variations</title>
+  </head>
+  <body>
+    <form id="form-primary" class="form-style" action="#">
+      <h2>Primary Inputs</h2>
+      <div class="inputs-wrapper">
+        <label for="primary-small">Small</label>
+        <input type="text" id="primary-small" class="input input-primary input-small" placeholder="Primary small" />
+
+        <label for="primary-medium">Medium</label>
+        <input type="text" id="primary-medium" class="input input-primary input-medium" placeholder="Primary medium" />
+
+        <label for="primary-large">Large</label>
+        <input type="text" id="primary-large" class="input input-primary input-large" placeholder="Primary large" />
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <form id="form-secondary" class="form-style" action="#">
+      <h2>Secondary Inputs</h2>
+      <div class="inputs-wrapper">
+        <label for="secondary-small">Small</label>
+        <input
+          type="text"
+          id="secondary-small"
+          class="input input-secondary input-small"
+          placeholder="Secondary small"
+        />
+
+        <label for="secondary-medium">Medium</label>
+        <input
+          type="text"
+          id="secondary-medium"
+          class="input input-secondary input-medium"
+          placeholder="Secondary medium"
+        />
+
+        <label for="secondary-large">Large</label>
+        <input
+          type="text"
+          id="secondary-large"
+          class="input input-secondary input-large"
+          placeholder="Secondary large"
+        />
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <form id="form-mixed" class="form-style" action="#">
+      <h2>Mixed Styles</h2>
+      <div class="inputs-wrapper">
+        <label for="mixed-primary-large">Primary Large</label>
+        <input
+          type="email"
+          id="mixed-primary-large"
+          class="input input-primary input-large"
+          placeholder="Email (large)"
+        />
+
+        <label for="mixed-secondary-small">Secondary Small</label>
+        <input
+          type="password"
+          id="mixed-secondary-small"
+          class="input input-secondary input-small"
+          placeholder="Password (small)"
+        />
+
+        <label for="mixed-primary-medium">Primary Medium</label>
+        <input
+          type="text"
+          id="mixed-primary-medium"
+          class="input input-primary input-medium"
+          placeholder="Username (medium)"
+        />
+      </div>
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+  </body>
 </html>
