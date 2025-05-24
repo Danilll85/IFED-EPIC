@@ -3,6 +3,7 @@
   --navbar-color: #1e1e1e;
   --navbar-font-color: #ff0055;
   --hero-font-color: #ff0055;
+  --additional-color: #e0e0e0;
   --size-0-5: 0.5rem;
   --size-1: 1rem;
   --size-1-5: 1.5rem;
@@ -16,6 +17,7 @@
   --spacing-2-5: 2.5rem;
   --spacing-4: 4rem;
   --spacing-5: 5rem;
+  --spacing-6: 6rem;
   --spacing-7: 7rem;
   --spacing-10: 10rem;
   --spacing-11: 11rem;
@@ -29,6 +31,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -153,5 +159,84 @@ body {
 
 .skills-section {
   height: 100vh;
-  padding-top: var(--spacing-7);
+  padding-top: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-2);
+
+  > .skills-header {
+    font-size: var(--spacing-4);
+    color: var(--additional-color);
+  }
+}
+
+
+/*old css*/
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--darker);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.folder-icon {
+    color: var(--primary);
+    font-size: 40px;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.project-links a {
+    color: var(--light);
+    font-size: 22px;
+}
+
+.project-links a:hover {
+    color: var(--primary);
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--light);
+}
+
+.project-card p {
+    color: var(--gray);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--gray-light);
 }
