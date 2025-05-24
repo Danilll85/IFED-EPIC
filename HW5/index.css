@@ -107,6 +107,7 @@ body {
   right: 11rem;
   width: 40%;
   object-fit: contain;
+  box-shadow: 20px 20px 0.6rem var(--hero-font-color);
 }
 
 .arrow {
@@ -116,6 +117,7 @@ body {
   height: 40px;
   width: 6px;
   background: #fff;
+  cursor: pointer;
   animation: animate 2s infinite;
 }
 
@@ -135,18 +137,21 @@ body {
   0% {
     transform: translateY(0);
     opacity: 0.5;
+    cursor: pointer;
   }
   50% {
     transform: translateY(80px);
     opacity: 1;
+    cursor: pointer;
   }
   100% {
     transform: translateY(160px);
     opacity: 0;
+    cursor: pointer;
   }
 }
 
-
 .skills-section {
   height: 100vh;
+  padding-top: var(--spacing-7);
 }
