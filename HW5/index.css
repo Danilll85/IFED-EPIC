@@ -4,11 +4,13 @@
   --navbar-color: #1e1e1e;
   /* --navbar-font-color: #ff3366; */
   --navbar-font-color: #ff0055;
+  --hero-font-color: #ff0055;
   --size-0-5: 0.5rem;
   --size-1: 1rem;
   --size-1-5: 1.5rem;
   --size-2: 2rem;
   --size-4: 4rem;
+  --size-4-5: 4.5rem;
   --spacing-0-5: 0.5rem;
   --spacing-1: 1rem;
   --spacing-1-5: 1.5rem;
@@ -29,6 +31,7 @@ body {
   background-color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
   font-size: var(--size-1);
+  color: var(--navbar-font-color);
 }
 
 .header {
@@ -78,16 +81,18 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  
 }
 
 .hero-content {
   outline: 1px solid black;
   flex: 1;
+  color: var(--hero-font-color);
   /* flex-grow: 1;
   flex-shrink: 4; */
 
   > h1 {
-    font-size: var(--size-4);
+    font-size: var(--size-4-5);
     padding: var(--spacing-0-5) var(--spacing-0-5);
   }
 
