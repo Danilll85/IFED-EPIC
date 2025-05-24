@@ -1,10 +1,8 @@
 :root {
-  /* --primary-color: #0a192f; */
-  --primary-color: #121212;
+  /* --primary-color: #121212;
   --navbar-color: #1e1e1e;
-  /* --navbar-font-color: #ff3366; */
   --navbar-font-color: #ff0055;
-  --hero-font-color: #ff0055;
+  --hero-font-color: #ff0055; */
   --size-0-5: 0.5rem;
   --size-1: 1rem;
   --size-1-5: 1.5rem;
@@ -16,6 +14,7 @@
   --spacing-1-5: 1.5rem;
   --spacing-2: 2rem;
   --spacing-4: 4rem;
+  --spacing-7: 7rem;
   --spacing-60: 60rem;
   --spacing-tmp: 100rem;
 }
@@ -68,7 +67,7 @@ body {
 }
 
 .main {
-  margin-top: var(--spacing-4);
+  /* margin-top: var(--spacing-4); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,26 +79,25 @@ body {
   margin-inline: 10rem;
   height: 100vh;
   display: flex;
-  align-items: center;
-  
+  align-items: center; 
+}
+
+.hero-content-wrapper {
+  padding-inline: 7rem;
 }
 
 .hero-content {
   outline: 1px solid black;
   flex: 1;
   color: var(--hero-font-color);
-  /* flex-grow: 1;
-  flex-shrink: 4; */
 
   > h1 {
     font-size: var(--size-4-5);
     padding: var(--spacing-0-5) var(--spacing-0-5);
   }
 
-  > h2 {
-  }
-
   > p {
+    font-size: var(--size-2);
   }
 }
 
