@@ -8,6 +8,7 @@
   --size-1: 1rem;
   --size-1-5: 1.5rem;
   --size-2: 2rem;
+  --size-3: 3rem;
   --size-4: 4rem;
   --size-4-5: 4.5rem;
   --spacing-0-5: 0.5rem;
@@ -23,6 +24,7 @@
   --spacing-11: 11rem;
   --spacing-12: 12rem;
   --spacing-20: 20rem;
+  --spacing-30: 30rem;
   --spacing-60: 60rem;
   --spacing-tmp: 100rem;
 }
@@ -44,6 +46,7 @@ body {
   color: var(--navbar-font-color);
 }
 
+/*navbar*/
 .header {
   background-color: var(--navbar-color);
   position: fixed;
@@ -116,6 +119,7 @@ body {
 .logo {
   > a {
     text-decoration: none;
+    color: var(--navbar-font-color);
 
     &:visited {
       color: var(--navbar-font-color);
@@ -131,10 +135,12 @@ body {
   gap: var(--spacing-1-5);
 }
 
+/*hero-section*/
 .hero-section {
   margin-inline: var(--spacing-10);
   padding-top: var(--spacing-7);
   height: 100vh;
+  width: 99vw;
 }
 
 .hero-content {
@@ -163,7 +169,7 @@ body {
 
 .arrow {
   position: absolute;
-  bottom: 7rem;
+  bottom: 10rem;
   left: calc(100vw / 2);
   height: 40px;
   width: 6px;
@@ -202,6 +208,184 @@ body {
   }
 }
 
+/*27' screen*/
+@media screen and (min-width: 2540px) {
+  .nav {
+    gap: 58rem;
+  }
+  .hero-section {
+    padding-top: var(--spacing-10);
+    margin-inline: 10rem;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-inline: 14rem;
+
+    > h1 {
+      padding-left: 0;
+      font-size: 6rem;
+    }
+
+    > p {
+      font-size: 3rem;
+    }
+  }
+
+  .hero-img {
+    top: 12rem;
+    right: 20rem;
+  }
+}
+
+/* Средний диапазон: 27' screen (2240px - 2539px) */
+@media screen and (min-width: 2240px) and (max-width: 2539px) {
+  .nav {
+    gap: 55rem; /* Можно заменить на `vw`, если нужно адаптивно */
+  }
+
+  .hero-section {
+    padding-top: var(--spacing-10);
+    margin-inline: 10rem; /* Или `10vw` для адаптивности */
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-inline: 14rem; /* Или `14vw` */
+
+    > h1 {
+      padding-left: 0;
+      font-size: 4.5rem;
+    }
+
+    > p {
+      font-size: 2.5rem;
+    }
+  }
+
+  .hero-img {
+    position: absolute;
+    top: 35%; /* Вместо `12rem` — процент от высоты родителя */
+    right: 17%; /* Вместо `20rem` — процент от ширины родителя */
+    width: 40%; /* Адаптивная ширина */
+  }
+}
+
+/* Средний диапазон: 27' screen (2240px - 2539px) */
+@media screen and (min-width: 2000px) and (max-width: 2239px) {
+  .nav {
+    gap: 40rem; /* Можно заменить на `vw`, если нужно адаптивно */
+  }
+
+  .hero-section {
+    padding-top: var(--spacing-10);
+    margin-inline: 10rem; /* Или `10vw` для адаптивности */
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-inline: 14rem; /* Или `14vw` */
+
+    > h1 {
+      padding-left: 0;
+      font-size: 4rem;
+    }
+
+    > p {
+      font-size: 2rem;
+    }
+  }
+
+  .hero-img {
+    position: absolute;
+    top: 35%; /* Вместо `12rem` — процент от высоты родителя */
+    right: 17%; /* Вместо `20rem` — процент от ширины родителя */
+    width: 38%; /* Адаптивная ширина */
+  }
+}
+
+/* Средний диапазон: 27' screen (2240px - 2539px) */
+@media screen and (min-width: 1921px) and (max-width: 1999px) {
+  .nav {
+    gap: 25rem; /* Можно заменить на `vw`, если нужно адаптивно */
+  }
+
+  .hero-section {
+    padding-top: var(--spacing-10);
+    margin-inline: 10rem; /* Или `10vw` для адаптивности */
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-inline: 14rem; /* Или `14vw` */
+
+    > h1 {
+      padding-left: 0;
+      font-size: 4rem;
+    }
+
+    > p {
+      font-size: 2rem;
+    }
+  }
+
+  .hero-img {
+    position: absolute;
+    top: 35%; /* Вместо `12rem` — процент от высоты родителя */
+    right: 17%; /* Вместо `20rem` — процент от ширины родителя */
+    width: 38%; /* Адаптивная ширина */
+  }
+}
+
+
+/*laptop*/
+@media screen and (min-width: 1700px) and (max-width: 1920px) {
+  .nav {
+    gap: 50rem;
+  }
+
+  .hero-section {
+    padding-top: 3rem;
+    margin-inline: 2rem;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 18rem;
+    margin-inline: 0rem;
+
+    > h1 {
+      padding-left: 0;
+      font-size: 5rem;
+    }
+
+    > p {
+      font-size: 2.5rem;
+    }
+  }
+
+  .hero-img {
+    top: 9rem;
+    right: 22rem;
+    width: 38%;
+  }
+
+  .arrow {
+    bottom: 7rem;
+  }
+}
+
+/*skills*/
 .skills-section {
   height: 100vh;
   padding-top: var(--spacing-6);
@@ -406,7 +590,6 @@ body {
   padding: 0.3rem 0.8rem;
   border-radius: 4px;
 }
-
 
 .contact-section {
   padding: 6rem 0;
