@@ -49,12 +49,10 @@ body {
 /*navbar*/
 .header {
   background-color: var(--navbar-color);
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 4;
-  height: var(--spacing-4);
   padding: 0 var(--spacing-1-5);
   display: flex;
   justify-content: center;
@@ -70,7 +68,6 @@ body {
 .nav-links > a {
   color: var(--navbar-font-color);
   text-decoration: none;
-  position: relative;
   padding: var(--spacing-0-5) 0;
   transition: all 0.3s ease;
   font-weight: 500;
@@ -106,12 +103,14 @@ body {
 }
 
 .nav {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  gap: var(--spacing-60);
   font-size: var(--size-1-5);
   color: var(--navbar-font-color);
+  margin: var(--size-1-5) 0;
 
   transition: all 0.3s ease;
 }
@@ -137,15 +136,12 @@ body {
 
 /*hero-section*/
 .hero-section {
-  margin-inline: var(--spacing-10);
-  padding-top: var(--spacing-7);
   height: 100vh;
-  width: 99vw;
+  margin-inline: var(--spacing-10);
 }
 
 .hero-content {
   position: relative;
-  padding-inline: var(--spacing-20);
   color: var(--hero-font-color);
 
   > h1 {
@@ -161,8 +157,8 @@ body {
 .hero-img {
   position: absolute;
   top: 6rem;
-  right: 11rem;
-  width: 40%;
+  right: 0rem;
+  width: 50%;
   object-fit: contain;
   box-shadow: 20px 20px 0.6rem var(--hero-font-color);
 }
@@ -208,7 +204,49 @@ body {
   }
 }
 
-/*27' screen*/
+@media screen and (max-width: 1539px) {
+  .hero-img {
+    position: static;
+    width: 100%;
+  }
+
+  .hero-section {
+    padding-top: 0;
+  }
+
+  .hero-content {
+    > h1 {
+      padding-left: 0;
+      font-size: 4rem;
+    }
+
+    > p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1168px) and (max-width: 1538px) {
+  .hero-img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .hero-content {
+    > h1 {
+      padding-left: 0;
+      font-size: 2rem;
+    }
+
+    > p {
+      font-size: 0.5rem;
+    }
+
+    padding-inline: var(--spacing-0-5);
+  }
+}
+
 @media screen and (min-width: 2540px) {
   .nav {
     gap: 58rem;
@@ -240,22 +278,21 @@ body {
   }
 }
 
-/* Средний диапазон: 27' screen (2240px - 2539px) */
 @media screen and (min-width: 2240px) and (max-width: 2539px) {
   .nav {
-    gap: 55rem; /* Можно заменить на `vw`, если нужно адаптивно */
+    gap: 55rem;
   }
 
   .hero-section {
     padding-top: var(--spacing-10);
-    margin-inline: 10rem; /* Или `10vw` для адаптивности */
+    margin-inline: 10rem;
   }
 
   .hero-content {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-inline: 14rem; /* Или `14vw` */
+    margin-inline: 14rem;
 
     > h1 {
       padding-left: 0;
@@ -269,28 +306,28 @@ body {
 
   .hero-img {
     position: absolute;
-    top: 35%; /* Вместо `12rem` — процент от высоты родителя */
-    right: 17%; /* Вместо `20rem` — процент от ширины родителя */
-    width: 40%; /* Адаптивная ширина */
+    top: 35%;
+    right: 17%;
+    width: 40%;
   }
 }
 
 /* Средний диапазон: 27' screen (2240px - 2539px) */
 @media screen and (min-width: 2000px) and (max-width: 2239px) {
   .nav {
-    gap: 40rem; /* Можно заменить на `vw`, если нужно адаптивно */
+    gap: 40rem;
   }
 
   .hero-section {
     padding-top: var(--spacing-10);
-    margin-inline: 10rem; /* Или `10vw` для адаптивности */
+    margin-inline: 10rem;
   }
 
   .hero-content {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-inline: 14rem; /* Или `14vw` */
+    margin-inline: 14rem;
 
     > h1 {
       padding-left: 0;
@@ -304,28 +341,27 @@ body {
 
   .hero-img {
     position: absolute;
-    top: 35%; /* Вместо `12rem` — процент от высоты родителя */
-    right: 17%; /* Вместо `20rem` — процент от ширины родителя */
-    width: 38%; /* Адаптивная ширина */
+    top: 35%;
+    right: 17%;
+    width: 38%;
   }
 }
 
-/* Средний диапазон: 27' screen (2240px - 2539px) */
 @media screen and (min-width: 1921px) and (max-width: 1999px) {
   .nav {
-    gap: 25rem; /* Можно заменить на `vw`, если нужно адаптивно */
+    gap: 25rem;
   }
 
   .hero-section {
     padding-top: var(--spacing-10);
-    margin-inline: 10rem; /* Или `10vw` для адаптивности */
+    margin-inline: 10rem;
   }
 
   .hero-content {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-inline: 14rem; /* Или `14vw` */
+    margin-inline: 14rem;
 
     > h1 {
       padding-left: 0;
@@ -339,12 +375,11 @@ body {
 
   .hero-img {
     position: absolute;
-    top: 35%; /* Вместо `12rem` — процент от высоты родителя */
-    right: 17%; /* Вместо `20rem` — процент от ширины родителя */
-    width: 38%; /* Адаптивная ширина */
+    top: 35%;
+    right: 17%;
+    width: 38%;
   }
 }
-
 
 /*laptop*/
 @media screen and (min-width: 1700px) and (max-width: 1920px) {
@@ -398,6 +433,12 @@ body {
     font-size: var(--spacing-4);
     color: var(--additional-color);
   }
+
+  @media screen and (max-width: 700px) {
+    > .skills-header {
+      font-size: var(--spacing-2);
+    }
+  }
 }
 
 .about-me-section {
@@ -414,10 +455,9 @@ body {
   padding: 30px;
   border-radius: 8px;
   width: 100%;
-  height: 70vh;
-  overflow-y: auto;
+  /*overflow-y: auto;*/
   box-shadow: 0 10px 30px rgba(255, 0, 85, 0.2);
-  position: relative;
+  /*position: relative;*/
   border: 1px solid var(--hero-font-color);
 }
 
