@@ -249,7 +249,7 @@ body {
 
 @media screen and (min-width: 2540px) {
   .nav {
-    gap: 58rem;
+    padding-inline: 20rem;
   }
   .hero-section {
     padding-top: var(--spacing-10);
@@ -274,7 +274,8 @@ body {
 
   .hero-img {
     top: 12rem;
-    right: 20rem;
+    right: -9rem;
+    width: 60%;
   }
 }
 
