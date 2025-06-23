@@ -1,199 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Danila Kuroedov | business card</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="nav">
-        <div class="logo"><a href="#about">business card</a></div>
-        <div class="nav-links">
-          <a href="#about-me">About me</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </header>
-    <main class="main">
-      <section id="about" class="hero-section">
-        <div class="hero-content">
-          <h1>
-            Hi, I'm Danila, Frontend <br />
-            Developer
-          </h1>
-          <img src="./assets/hero-photo.jpg" class="hero-img" alt="Portfolio photo" />
-          <p>
-            My goal is to turn <br />
-            ideas into interactive <br />
-            experiences.
-          </p>
-        </div>
-        <a href="#about-me"><div class="arrow"></div></a>
-      </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Danila Kuroedov | business card</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <div class="logo"><a href="#about">business card</a></div>
+                <div class="nav-links">
+                    <a href="#about-me">About me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section id="about" class="hero-section">
+                <div class="hero-content">
+                    <h1>
+                        Hi, I'm Danila, Frontend <br />
+                        Developer
+                    </h1>
+                    <p>
+                        My goal is to turn <br />
+                        ideas into interactive <br />
+                        experiences.
+                    </p>
+                    <div class="hero-img-container">
+                        <img
+                            src="./assets/hero-photo.jpg"
+                            class="hero-img"
+                            alt="Portfolio photo"
+                        />
+                    </div>
+                </div>
+                <a href="#about-me"><div class="arrow"></div></a>
+            </section>
 
-      <section id="about-me" class="about-me-section">
-        <div class="terminal">
-          <div id="output"></div>
-          <div id="input-line" class="input-line">
-            <span class="prompt">></span>
-            <span id="command" class="command"></span>
-            <span class="cursor"></span>
-          </div>
-        </div>
-      </section>
+            <section id="about-me" class="about-me-section">
+                <div class="terminal">
+                    <div id="output"></div>
+                    <div id="input-line" class="input-line">
+                        <span class="prompt">></span>
+                        <span id="command" class="command"></span>
+                        <span class="cursor"></span>
+                    </div>
+                </div>
+            </section>
 
-      <section id="skills" class="skills-section">
-        <h2 class="skills-header">My skills tree</h2>
-        <img src="./assets/skillsTree.svg" alt="skills tree" />
-      </section>
+            <section id="skills" class="skills-section">
+                <h2 class="skills-header">My skills tree</h2>
+                <img
+                    src="./assets/skillsTree.svg"
+                    alt="skills tree"
+                    width="70%"
+                />
+            </section>
 
-      <section id="projects" class="container">
-        <div class="section-title">
-          <h2>Some Things I've Built</h2>
-        </div>
+            <section id="projects" class="container">
+                <div class="section-title">
+                    <h2>Some Things I've Built</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="folder-icon fas fa-folder"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"
+                                    ><i class="fab fa-github"></i
+                                ></a>
+                                <a
+                                    href="./projects/project1.html"
+                                    aria-label="External Link"
+                                    ><i class="fas fa-external-link-alt"></i
+                                ></a>
+                            </div>
+                        </div>
+                        <h3>E-commerce Platform</h3>
+                        <p>
+                            A modern e-commerce solution with React, Redux, and
+                            Node.js backend. Features product filtering, cart
+                            functionality, and secure checkout.
+                        </p>
+                        <div class="tech-list">
+                            <span>React</span>
+                            <span>Redux</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
 
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-header">
-              <i class="folder-icon fas fa-folder"></i>
-              <div class="project-links">
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="./projects/project1.html" aria-label="External Link"
-                  ><i class="fas fa-external-link-alt"></i
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="folder-icon fas fa-folder"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"
+                                    ><i class="fab fa-github"></i
+                                ></a>
+                                <a
+                                    href="./projects/project2.html"
+                                    aria-label="External Link"
+                                    ><i class="fas fa-external-link-alt"></i
+                                ></a>
+                            </div>
+                        </div>
+                        <h3>Task Management App</h3>
+                        <p>
+                            A productivity application built with Vue.js and
+                            Firebase. Includes drag-and-drop interface, team
+                            collaboration, and real-time updates.
+                        </p>
+                        <div class="tech-list">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="folder-icon fas fa-folder"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"
+                                    ><i class="fab fa-github"></i
+                                ></a>
+                                <a
+                                    href="./projects/project3.html"
+                                    aria-label="External Link"
+                                    ><i class="fas fa-external-link-alt"></i
+                                ></a>
+                            </div>
+                        </div>
+                        <h3>Weather Dashboard</h3>
+                        <p>
+                            Interactive weather application using OpenWeather
+                            API. Shows current weather, forecasts, and
+                            historical data with clean visualizations.
+                        </p>
+                        <div class="tech-list">
+                            <span>JavaScript</span>
+                            <span>API Integration</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Get In Touch</h2>
+                        <p>
+                            I'm currently looking for new opportunities. Whether
+                            you have a question or just want to say hi, I'll do
+                            my best to get back to you!
+                        </p>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>danilkuroedov85@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+375 (44) 558-29-63</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Minsk, Belarus</span>
+                            </div>
+                        </div>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    placeholder="Name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="email"
+                                    placeholder="Email"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    placeholder="Message"
+                                    rows="5"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"
+                    ><i class="fab fa-github"></i
                 ></a>
-              </div>
-            </div>
-            <h3>E-commerce Platform</h3>
-            <p>
-              A modern e-commerce solution with React, Redux, and Node.js backend. Features product filtering, cart
-              functionality, and secure checkout.
-            </p>
-            <div class="tech-list">
-              <span>React</span>
-              <span>Redux</span>
-              <span>Node.js</span>
-              <span>MongoDB</span>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <i class="folder-icon fas fa-folder"></i>
-              <div class="project-links">
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="./projects/project2.html" aria-label="External Link"
-                  ><i class="fas fa-external-link-alt"></i
+                <a href="#" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin-in"></i
                 ></a>
-              </div>
-            </div>
-            <h3>Task Management App</h3>
-            <p>
-              A productivity application built with Vue.js and Firebase. Includes drag-and-drop interface, team
-              collaboration, and real-time updates.
-            </p>
-            <div class="tech-list">
-              <span>Vue.js</span>
-              <span>Firebase</span>
-              <span>Tailwind CSS</span>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <i class="folder-icon fas fa-folder"></i>
-              <div class="project-links">
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="./projects/project3.html" aria-label="External Link"
-                  ><i class="fas fa-external-link-alt"></i
+                <a href="#" aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i
                 ></a>
-              </div>
+                <a href="#" aria-label="Email"
+                    ><i class="fas fa-envelope"></i
+                ></a>
             </div>
-            <h3>Weather Dashboard</h3>
-            <p>
-              Interactive weather application using OpenWeather API. Shows current weather, forecasts, and historical
-              data with clean visualizations.
-            </p>
-            <div class="tech-list">
-              <span>JavaScript</span>
-              <span>API Integration</span>
-              <span>Chart.js</span>
+            <div class="credits">
+                <p>Designed & Built by Danila Kuroedov</p>
+                <p>Inspired by modern developer portfolios</p>
             </div>
-          </div>
-        </div>
-      </section>
+        </footer>
 
-      <section id="contact" class="contact-section">
-        <div class="container">
-          <div class="section-title">
-            <h2>Get In Touch</h2>
-            <p>
-              I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll do
-              my best to get back to you!
-            </p>
-          </div>
-          <div class="contact-content">
-            <div class="contact-info">
-              <h3>Contact Information</h3>
-              <div class="info-item">
-                <i class="fas fa-envelope"></i>
-                <span>danilkuroedov85@gmail.com</span>
-              </div>
-              <div class="info-item">
-                <i class="fas fa-phone"></i>
-                <span>+375 (44) 558-29-63</span>
-              </div>
-              <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Minsk, Belarus</span>
-              </div>
-            </div>
-            <form class="contact-form">
-              <div class="form-group">
-                <input type="text" placeholder="Name" required />
-              </div>
-              <div class="form-group">
-                <input type="email" placeholder="Email" required />
-              </div>
-              <div class="form-group">
-                <textarea placeholder="Message" rows="5" required></textarea>
-              </div>
-              <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="social-links">
-        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-      </div>
-      <div class="credits">
-        <p>Designed & Built by Danila Kuroedov</p>
-        <p>Inspired by modern developer portfolios</p>
-      </div>
-    </footer>
-
-    <script src="./index.js"></script>
-  </body>
+        <script src="./index.js"></script>
+    </body>
 </html>
